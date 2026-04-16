@@ -1,0 +1,8 @@
+{
+  "best_epoch": 11,
+  "best_val_iou": 0.9879065470365016,
+  "final_epoch": 31,
+  "final_val_acc": 0.9692916666666667,
+  "final_val_iou": 0.9607316430897935,
+  "final_val_f1": 0.9791400972982339
+}
