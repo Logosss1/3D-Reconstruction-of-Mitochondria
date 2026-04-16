@@ -1,0 +1,25 @@
+# GPU (Windows): after `conda env create`, install CUDA builds — see README "Windows + NVIDIA GPU".
+name: mito3d_env
+channels:
+  - pytorch
+  - conda-forge
+  - defaults
+dependencies:
+  - python=3.9
+  - pytorch=2.0.1
+  - torchvision
+  - cudatoolkit=11.8
+  - numpy
+  - scipy
+  - scikit-image
+  - zarr
+  - numcodecs
+  - trimesh
+  - tqdm
+  - matplotlib
+  - tensorboard
+  - pip
+  - pip:
+    - plyfile
+    - fibsem-tools
+    - tifffile
