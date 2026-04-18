@@ -170,7 +170,7 @@ python others/scripts/make_video.py
 
 ---
 
-## 5. 代码核心思想简述（用于论文/答辩）
+## 5. 代码核心简述
 
 - **隐式表示 (Implicit Representation)**  
   使用函数 \( f_\theta(x, y, z) \rightarrow [0,1] \) 表示“该点是否在目标内部”，而不是直接预测体素网格。
