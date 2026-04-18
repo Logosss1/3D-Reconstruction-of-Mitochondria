@@ -32,7 +32,7 @@ conda activate mito3d_env
 python -c "import torch; print('CUDA:', torch.cuda.is_available())"
 ```
 
-### Windows + NVIDIA GPU（如 RTX 4080 Laptop）
+### Windows + NVIDIA GPU
 
 若 `torch.cuda.is_available()` 为 `False`，常见原因是装到了 **CPU 版 PyTorch**，或 **pip 安装的 numpy 与 conda 混用**（会出现 `numpy` 变成 namespace、`_multiarray_umath` 报错）。
 
