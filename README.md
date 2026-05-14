@@ -1,7 +1,7 @@
 ## Mito3D Reconstruction Thesis
 
 本项目是一个面向毕业论文展示的 **线粒体 3D 重建与可视化** 小型工程。  
-它通过隐式表示网络（ConvONet）从 3D EM 体数据中重建线粒体的三维形状，并生成论文 / 答辩可用的图片和动画。
+它通过隐式表示网络（ConvONet）从 3D EM 体数据中重建线粒体的三维形状，并生成论文可用的图片和动画喵。
 ![image](https://github.com/Logosss1/3D-Reconstruction-of-Mitochondria/blob/main/reconstruction_rotation_showcase_gt.gif)
 
 ---
@@ -145,7 +145,7 @@ python generate.py
 - **输出**：
   - `final_mitochondria.obj` —— 3D 模型，可用 MeshLab / Blender 等查看。
   - `preview_result.png` —— 结果预览图。
-  - `Thesis_Final_Result.png` —— 用于论文 / 答辩的高清图。
+  - `Thesis_Final_Result.png` —— 用于展示的高清图。
 
 ### 4.4 定量指标展示（示例）
 
@@ -182,7 +182,7 @@ python others/scripts/make_video.py
   - 在连续空间上评估 \( f_\theta \)，构建概率体。
   - 使用 Marching Cubes 在给定阈值下提取等值面，得到 3D 网格。
 - **可视化与展示**  
-  - 通过高分辨率 PNG、OBJ 和 GIF，将 3D 重建结果以多种形式呈现，方便论文和答辩展示。
+  - 通过高分辨率 PNG、OBJ 和 GIF，将 3D 重建结果以多种形式呈现，方便论文和答辩展示喵。
 
 ---
 
@@ -198,7 +198,7 @@ python others/scripts/make_video.py
 
 ---
 
-## 7. 致谢（可选）
+## 7. 致谢
 
 - 仿真数据与网络结构设计参考了公开的 3D 细胞超微结构数据集（如 OpenOrganelle）及隐式表示相关工作。  
-- 本代码主要用于教学与毕业设计示例，可根据需要在此基础上扩展为更完整的科研项目。
+- 本代码主要用于教学与毕业设计示例，可根据需要在此基础上扩展为更完整的科研项目喵。
