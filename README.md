@@ -1,7 +1,7 @@
 ## Mito3D Reconstruction Thesis
 
 本项目是一个面向毕业论文展示的 **线粒体 3D 重建与可视化** 小型工程。  
-它通过隐式表示网络（ConvONet）从 3D EM 体数据中重建线粒体的三维形状，并生成论文可用的图片和动画喵。
+它通过隐式表示网络（ConvONet）从 3D EM 体数据中重建线粒体的三维形状，并生成论文可用的图片和gif喵。
 ![image](https://github.com/Logosss1/3D-Reconstruction-of-Mitochondria/blob/main/reconstruction_rotation_showcase_gt.gif)
 
 ---
