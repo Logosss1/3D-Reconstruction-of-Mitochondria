@@ -1,9 +1,8 @@
 # Simplified Convolutional Occupancy Network Based 3D Reconstruction for Mitochondria
 
-<p align="center">
-  <img src="preview_result.png" alt="Preview reconstruction" width="47%" />
-  <img src="[Mito3D_Rotation_Showcase.gif](https://github.com/Logosss1/3D-Reconstruction-of-Mitochondria/blob/main/reconstruction_rotation_showcase_gt.gif)" alt="Rotation showcase" width="47%" />
-</p>
+![image](https://github.com/Logosss1/3D-Reconstruction-of-Mitochondria/blob/main/reconstruction_rotation_showcase_gt.gif)
+<img width="600" alt="线粒体重建效果图" src="https://github.com/Logosss1/3D-Reconstruction-of-Mitochondria/blob/main/hela3_mito_gt_montage.png" />
+
 
 ---
 
