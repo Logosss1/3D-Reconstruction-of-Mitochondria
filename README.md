@@ -5,12 +5,11 @@
 ![image](https://github.com/Logosss1/3D-Reconstruction-of-Mitochondria/blob/main/reconstruction_rotation_showcase_gt.gif)
 <img width="600" alt="线粒体重建效果图" src="https://github.com/Logosss1/3D-Reconstruction-of-Mitochondria/blob/main/hela3_mito_gt_montage.png" />
 
-
 ## Project Summary
 
 This repository accompanies an undergraduate thesis on **three-dimensional reconstruction of mitochondria** from volumetric electron microscopy data. The project implements a simplified convolutional occupancy network pipeline that learns a point-wise occupancy function from FIB-SEM / OpenOrganelle-style crops and converts dense occupancy predictions into explicit meshes through Marching Cubes.
 
-Rather than treating the task as direct voxel segmentation alone, the project models mitochondrial shape reconstruction as a continuous occupancy prediction problem. This design supports mesh extraction, visual inspection, thesis-ready figure generation, and quantitative validation in a unified workflow.
+Rather than treating the task as direct voxel segmentation alone, the project formulates mitochondrial shape reconstruction as a continuous occupancy prediction problem. This design supports mesh extraction, visual inspection, thesis-ready figure generation, and quantitative validation within a unified workflow.
 
 ## Research Scope
 
@@ -44,7 +43,7 @@ The workflow consists of four major stages:
 4. **Validation and visualization**  
    The generated mesh is compared against binary labels using voxel and surface-related metrics, and exported as figures, OBJ meshes, and animated GIFs.
 
-## Actual Main Workflow in This Repository
+## Main Experimental Workflow
 
 The current thesis-oriented workflow is organized around [hela2_mito_pipeline.py](hela2_mito_pipeline.py), with execution delegated to [train.py](train.py), [generate.py](generate.py), and [validate_crop.py](validate_crop.py).
 
@@ -91,6 +90,8 @@ python -c "import torch; print(torch.__version__, torch.cuda.is_available())"
 ```
 
 ## Quick Start
+
+The commands below are representative entry points for reproducing the main thesis workflow. Exact outcomes depend on dataset domain, crop selection, checkpoint choice, and post-processing settings.
 
 ### Joint model training
 
@@ -151,7 +152,7 @@ These figures illustrate representative reconstructions, cross-domain montage co
 
 This repository supports the thesis **“Simplified Convolutional Occupancy Network Based 3D Reconstruction for Mitochondria.”** The thesis documents a lightweight 3D encoder + query MLP design, BCE + Dice training, mesh extraction through Marching Cubes, and empirical differences between HeLa2 and HeLa3 reconstruction behavior.
 
-For that reason, the repository description intentionally follows the thesis framing and experimental scope, instead of presenting the codebase as a domain-agnostic general-purpose package.
+For that reason, the repository description intentionally follows the thesis framing and experimental scope rather than presenting the codebase as a domain-agnostic general-purpose package.
 
 ## Limitations
 
