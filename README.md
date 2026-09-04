@@ -155,7 +155,7 @@ These figures illustrate representative reconstructions, cross-domain montage co
 
 ## Thesis Context
 
-This repository supports the undergraduate thesis **“Simplified Convolutional Occupancy Network Based 3D Reconstruction for Mitochondria”** by **Yuhao Lu**, Wenzhou-Kean University, supervised by **Gao Zhiqiang** (April 2026). The thesis is recorded in the university library; this repository does not claim that it has a public DOI or an online publisher record.
+This repository supports the undergraduate thesis **“Simplified Convolutional Occupancy Network Based 3D Reconstruction for Mitochondria”** by **Yuhao Lu**, Wenzhou-Kean University, supervised by **Gao Zhiqiang & Xie Zhiwu** (April 2026). The thesis is recorded in the university library; this repository does not claim that it has a public DOI or an online publisher record.
 
 For that reason, the repository description intentionally follows the thesis framing and experimental scope rather than presenting the codebase as a domain-agnostic general-purpose package.
 
@@ -170,4 +170,4 @@ For that reason, the repository description intentionally follows the thesis fra
 
 If you use this repository in academic writing or project presentation, please cite the associated thesis version and report the dataset domain, training mode, and validation setup used in your results. A machine-readable citation record is available in [`CITATION.cff`](CITATION.cff).
 
-> Lu, Yuhao. *Simplified Convolutional Occupancy Network Based 3D Reconstruction for Mitochondria*. Bachelor's thesis, Wenzhou-Kean University, 2026. Supervisor: Gao Zhiqiang.
+> Lu, Yuhao. *Simplified Convolutional Occupancy Network Based 3D Reconstruction for Mitochondria*. Bachelor's thesis, Wenzhou-Kean University, 2026. Supervisor: Xie Zhiwu.

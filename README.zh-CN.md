@@ -166,7 +166,7 @@ python validate_crop.py --data_root data --dataset jrc_hela-2 --crop_id 94 --mes
 
 ## 与论文的关系
 
-本仓库服务于 **Yuhao Lu** 在 Wenzhou-Kean University 完成的本科论文 **“Simplified Convolutional Occupancy Network Based 3D Reconstruction for Mitochondria”** 的实验实现与结果展示，导师为 **Gao Zhiqiang**，论文时间为 2026 年 4 月。论文仅说明为学校图书馆存档，不在此声称存在公开 DOI 或在线出版页面。论文摘要中强调：
+本仓库服务于 **Yuhao Lu** 在 Wenzhou-Kean University 完成的本科论文 **“Simplified Convolutional Occupancy Network Based 3D Reconstruction for Mitochondria”** 的实验实现与结果展示，导师为 **Gao Zhiqiang & Xie Zhiwu**，论文时间为 2026 年 4 月。论文仅说明为学校图书馆存档，不在此声称存在公开 DOI 或在线出版页面。论文摘要中强调：
 
 - 模型采用轻量 3D 卷积编码器 + 点查询 MLP；
 - 训练目标使用 BCE 与 Dice loss 以缓解前景稀疏问题；
@@ -174,7 +174,6 @@ python validate_crop.py --data_root data --dataset jrc_hela-2 --crop_id 94 --mes
 - HeLa2 与 HeLa3 数据域在结果上呈现明显差异；
 - overlap 指标与 surface-distance 指标可能在同一设计改动下出现分歧。
 
-因此，README 中的介绍会尽量与最终论文口径保持一致，而不是将该仓库描述为一个完全产品化的通用工具箱。
 
 ## 局限性说明
 
@@ -187,4 +186,4 @@ python validate_crop.py --data_root data --dataset jrc_hela-2 --crop_id 94 --mes
 
 如果你在学术写作或展示中使用本仓库，请优先引用对应论文版本，并在必要时说明所使用的数据域、训练模式与验证设置。机器可读的引用信息见 [`CITATION.cff`](CITATION.cff)。
 
-> Lu, Yuhao. *Simplified Convolutional Occupancy Network Based 3D Reconstruction for Mitochondria*. Bachelor's thesis, Wenzhou-Kean University, 2026. Supervisor: Gao Zhiqiang.
+> Lu, Yuhao. *Simplified Convolutional Occupancy Network Based 3D Reconstruction for Mitochondria*. Bachelor's thesis, Wenzhou-Kean University, 2026. Supervisor: Xie Zhiwu.
