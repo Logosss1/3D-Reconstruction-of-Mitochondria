@@ -73,7 +73,7 @@ Mito3D_Reconstruction_Thesis/
 ├─ src/
 ├─ scripts/
 ├─ checkpoints/
-├─ result/
+├─ reconstruction/
 ├─ thesis/
 ├─ Thesis_Final_Result.png
 ├─ preview_result.png
@@ -123,10 +123,12 @@ python hela2_mito_pipeline.py infer-all --checkpoint checkpoints/model_hela2_all
 ```bash
 python train.py --data_root data --dataset jrc_hela-2 --crop_id 94 --epochs 300
 python generate.py --data_root data --dataset jrc_hela-2 --crop_id 94 --checkpoint checkpoints/model_final.pth
-python validate_crop.py --data_root data --dataset jrc_hela-2 --crop_id 94 --mesh result/final_mitochondria.obj
+python validate_crop.py --data_root data --dataset jrc_hela-2 --crop_id 94 --mesh reconstruction/final_mitochondria.obj
 ```
 
-## 数据与输出
+## 数据、许可与输出
+
+仓库中的原创代码采用 MIT License。数据集、派生文件、第三方依赖和项目来源边界分别记录在 [`DATA_SOURCES.md`](DATA_SOURCES.md)、[`THIRD_PARTY_NOTICES.md`](THIRD_PARTY_NOTICES.md) 与 [`PROVENANCE.md`](PROVENANCE.md) 中。
 
 ### 输入数据
 
@@ -138,7 +140,7 @@ python validate_crop.py --data_root data --dataset jrc_hela-2 --crop_id 94 --mes
 ### 典型输出
 
 - `checkpoints/*.pth`：训练得到的模型权重；
-- `result/**`：推理结果、拼图、指标统计与验证输出；
+- `reconstruction/**`：推理结果、拼图、指标统计与验证输出；
 - `.obj`：三维网格模型；
 - `.png`：论文和汇报可直接使用的高分辨率图像；
 - `.gif`：旋转展示动画。
@@ -164,7 +166,7 @@ python validate_crop.py --data_root data --dataset jrc_hela-2 --crop_id 94 --mes
 
 ## 与论文的关系
 
-本仓库服务于论文 **“Simplified Convolutional Occupancy Network Based 3D Reconstruction for Mitochondria”** 的实验实现与结果展示。论文摘要中强调：
+本仓库服务于 **Yuhao Lu** 在 Wenzhou-Kean University 完成的本科论文 **“Simplified Convolutional Occupancy Network Based 3D Reconstruction for Mitochondria”** 的实验实现与结果展示，导师为 **Gao Zhiqiang**，论文时间为 2026 年 4 月。论文仅说明为学校图书馆存档，不在此声称存在公开 DOI 或在线出版页面。论文摘要中强调：
 
 - 模型采用轻量 3D 卷积编码器 + 点查询 MLP；
 - 训练目标使用 BCE 与 Dice loss 以缓解前景稀疏问题；
@@ -183,4 +185,6 @@ python validate_crop.py --data_root data --dataset jrc_hela-2 --crop_id 94 --mes
 
 ## Citation
 
-如果你在学术写作或展示中使用本仓库，请优先引用对应论文版本，并在必要时说明所使用的数据域、训练模式与验证设置。
+如果你在学术写作或展示中使用本仓库，请优先引用对应论文版本，并在必要时说明所使用的数据域、训练模式与验证设置。机器可读的引用信息见 [`CITATION.cff`](CITATION.cff)。
+
+> Lu, Yuhao. *Simplified Convolutional Occupancy Network Based 3D Reconstruction for Mitochondria*. Bachelor's thesis, Wenzhou-Kean University, 2026. Supervisor: Gao Zhiqiang.

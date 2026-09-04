@@ -1,0 +1,30 @@
+cff-version: 1.2.0
+message: "If you use this repository, please cite the associated undergraduate thesis and report the dataset domain, training mode, and validation setup."
+title: "Simplified Convolutional Occupancy Network Based 3D Reconstruction for Mitochondria"
+type: software
+authors:
+  - family-names: Lu
+    given-names: Yuhao
+    affiliation: Wenzhou-Kean University
+repository-code: "https://github.com/Logosss1/3D-Reconstruction-of-Mitochondria"
+license: MIT
+abstract: >-
+  An experimental pipeline for three-dimensional mitochondrial reconstruction
+  from volumetric electron microscopy data using a lightweight convolutional
+  occupancy network, mesh extraction, and crop-level validation.
+keywords:
+  - mitochondria
+  - 3D reconstruction
+  - occupancy network
+  - FIB-SEM
+  - OpenOrganelle
+  - electron microscopy
+preferred-citation:
+  type: thesis
+  title: "Simplified Convolutional Occupancy Network Based 3D Reconstruction for Mitochondria"
+  authors:
+    - family-names: Lu
+      given-names: Yuhao
+  institution: Wenzhou-Kean University
+  thesis-type: Bachelor thesis
+  year: 2026

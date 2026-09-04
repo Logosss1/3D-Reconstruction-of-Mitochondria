@@ -72,7 +72,7 @@ Mito3D_Reconstruction_Thesis/
 ├─ src/
 ├─ scripts/
 ├─ checkpoints/
-├─ result/
+├─ reconstruction/
 ├─ thesis/
 ├─ Thesis_Final_Result.png
 ├─ preview_result.png
@@ -116,10 +116,15 @@ python hela2_mito_pipeline.py infer-all --checkpoint checkpoints/model_hela2_all
 ```bash
 python train.py --data_root data --dataset jrc_hela-2 --crop_id 94 --epochs 300
 python generate.py --data_root data --dataset jrc_hela-2 --crop_id 94 --checkpoint checkpoints/model_final.pth
-python validate_crop.py --data_root data --dataset jrc_hela-2 --crop_id 94 --mesh result/final_mitochondria.obj
+python validate_crop.py --data_root data --dataset jrc_hela-2 --crop_id 94 --mesh reconstruction/final_mitochondria.obj
 ```
 
-## Data and Outputs
+## Data, Licensing, and Outputs
+
+The code in this repository is released under the MIT License. Dataset terms,
+derived artifacts, and third-party dependencies are documented separately in
+[`DATA_SOURCES.md`](DATA_SOURCES.md), [`THIRD_PARTY_NOTICES.md`](THIRD_PARTY_NOTICES.md),
+and [`PROVENANCE.md`](PROVENANCE.md).
 
 Typical inputs include:
 
@@ -129,7 +134,7 @@ Typical inputs include:
 Typical outputs include:
 
 - trained checkpoints in `checkpoints/`;
-- inference reports and montages in `result/`;
+- inference reports and montages in `reconstruction/`;
 - reconstructed `.obj` meshes;
 - thesis-ready `.png` figures;
 - animated `.gif` visualizations.
@@ -150,7 +155,7 @@ These figures illustrate representative reconstructions, cross-domain montage co
 
 ## Thesis Context
 
-This repository supports the thesis **“Simplified Convolutional Occupancy Network Based 3D Reconstruction for Mitochondria.”** The thesis documents a lightweight 3D encoder + query MLP design, BCE + Dice training, mesh extraction through Marching Cubes, and empirical differences between HeLa2 and HeLa3 reconstruction behavior.
+This repository supports the undergraduate thesis **“Simplified Convolutional Occupancy Network Based 3D Reconstruction for Mitochondria”** by **Yuhao Lu**, Wenzhou-Kean University, supervised by **Gao Zhiqiang** (April 2026). The thesis is recorded in the university library; this repository does not claim that it has a public DOI or an online publisher record.
 
 For that reason, the repository description intentionally follows the thesis framing and experimental scope rather than presenting the codebase as a domain-agnostic general-purpose package.
 
@@ -163,4 +168,6 @@ For that reason, the repository description intentionally follows the thesis fra
 
 ## Citation
 
-If you use this repository in academic writing or project presentation, please cite the associated thesis version and report the dataset domain, training mode, and validation setup used in your results.
+If you use this repository in academic writing or project presentation, please cite the associated thesis version and report the dataset domain, training mode, and validation setup used in your results. A machine-readable citation record is available in [`CITATION.cff`](CITATION.cff).
+
+> Lu, Yuhao. *Simplified Convolutional Occupancy Network Based 3D Reconstruction for Mitochondria*. Bachelor's thesis, Wenzhou-Kean University, 2026. Supervisor: Gao Zhiqiang.
