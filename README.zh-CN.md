@@ -187,4 +187,4 @@ python validate_crop.py --data_root data --dataset jrc_hela-2 --crop_id 94 --mes
 
 如果你在学术写作或展示中使用本仓库，请优先引用对应论文版本，并在必要时说明所使用的数据域、训练模式与验证设置。机器可读的引用信息见 [`CITATION.cff`](CITATION.cff)。
 
-> Lu, Yuhao. *Simplified Convolutional Occupancy Network Based 3D Reconstruction for Mitochondria*. Bachelor's thesis, Wenzhou-Kean University, 2026. Supervisor: Gao Zhiqiang.
+> Lu, Yuhao. *Simplified Convolutional Occupancy Network Based 3D Reconstruction for Mitochondria*. Bachelor's thesis, Wenzhou-Kean University, 2026. Supervisor: Xie Zhiwu.
